@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LA CASA DE FILMORA</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #000;
+      color: white;
+    }
+
+    header {
+      background: #0d0d0d;
+      padding: 20px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid red;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .house {
+      width: 60px;
+      height: 60px;
+      position: relative;
+      background: #1a1a1a;
+      transform: rotate(45deg);
+      border-radius: 10px;
+    }
+
+    .house::before {
+      content: "";
+      position: absolute;
+      width: 80px;
+      height: 20px;
+      background: red;
+      top: -18px;
+      left: -10px;
+      transform: rotate(-45deg);
+      border-radius: 10px;
+    }
+
+    .logo-text {
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .logo-text span {
+      color: red;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: red;
+    }
+
+    .hero {
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+      background: linear-gradient(to bottom, #000, #111);
+    }
+
+    .hero h1 {
+      font-size: 60px;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 span {
+      color: red;
+    }
+
+    .hero p {
+      max-width: 800px;
+      font-size: 20px;
+      line-height: 1.6;
+      color: #d9d9d9;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      padding: 15px 35px;
+      background: red;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: darkred;
+      transform: scale(1.05);
+    }
+
+    .vision {
+      padding: 80px 50px;
+      text-align: center;
+      background: #111;
+    }
+
+    .vision h2 {
+      font-size: 40px;
+      margin-bottom: 20px;
+      color: red;
+    }
+
+    .vision p {
+      max-width: 900px;
+      margin: auto;
+      font-size: 20px;
+      line-height: 1.8;
+      color: #ccc;
+    }
+
+    footer {
+      background: #000;
+      padding: 20px;
+      text-align: center;
+      border-top: 2px solid red;
+      color: #888;
+    }
+
+    @media(max-width: 768px) {
+      .hero h1 {
+        font-size: 40px;
+      }
+
+      .hero p {
+        font-size: 18px;
+      }
+
+      header {
+        flex-direction: column;
+        gap: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <div class="house"></div>
+      <div class="logo-text">LA CASA DE <span>FILMORA</span></div>
+    </div>
+
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#vision">Visión</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="inicio">
+    <h1>CREA SIN <span>LÍMITES</span></h1>
+    <p>
+      LA CASA DE FILMORA nace con la visión de inspirar a los creadores de contenido,
+      editores y diseñadores a producir videos increíbles con un estilo moderno,
+      profesional y creativo.
+    </p>
+
+    <a href="https://filmora.wondershare.com/" target="_blank">
+      <button class="btn">COMENZAR</button>
+    </a>
+  </section>
+
+  <section class="vision" id="vision">
+    <h2>NUESTRA VISIÓN</h2>
+    <p>
+      Queremos convertirnos en un espacio creativo donde cualquier persona pueda editar,
+      diseñar y transformar sus ideas en contenido visual impactante. Inspirados en el
+      estilo moderno de edición digital, buscamos ofrecer una experiencia elegante,
+      rápida y profesional con una identidad fuerte en rojo y negro.
+    </p>
+  </section>
+
+  <section class="vision" id="contacto">
+    <h2>CONTACTO E INFORMACIÓN</h2>
+    <p>
+      Filmora es una plataforma moderna de edición de video creada para facilitar la creación
+      de contenido profesional de manera rápida y sencilla. Destaca por sus efectos visuales,
+      herramientas de inteligencia artificial, edición intuitiva y compatibilidad con creadores
+      de contenido de todos los niveles.
+    </p>
+
+    <br><br>
+
+    <p>
+      🌐 Página oficial: https://filmora.wondershare.com/
+      <br><br>
+      📧 Soporte: customer_service@wondershare.com
+      <br><br>
+      🎬 Herramientas destacadas:
+      <br>
+      • Edición con IA
+      <br>
+      • Efectos cinematográficos
+      <br>
+      • Plantillas profesionales
+      <br>
+      • Exportación en alta calidad
+      <br>
+      • Compatible con Windows y Mac
+    </p>
+  </section>
+
+  <footer>
+    © 2026 LA CASA DE FILMORA | Inspirado en la creatividad y edición moderna.
+  </footer>
+
+</body>
+</html>
