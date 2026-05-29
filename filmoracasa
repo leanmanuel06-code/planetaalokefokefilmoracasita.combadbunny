@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LA CASA DE FILMORA</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:linear-gradient(to bottom,#000,#111);
+color:white;
+}
+
+header{
+background:#0d0d0d;
+padding:20px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+border-bottom:2px solid red;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.house{
+width:60px;
+height:60px;
+background:#1a1a1a;
+transform:rotate(45deg);
+border-radius:10px;
+position:relative;
+}
+
+.house::before{
+content:"";
+position:absolute;
+width:80px;
+height:20px;
+background:red;
+top:-18px;
+left:-10px;
+transform:rotate(-45deg);
+border-radius:10px;
+}
+
+.logo-text{
+font-size:28px;
+font-weight:bold;
+}
+
+.logo-text span{
+color:red;
+}
+
+nav{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:10px;
+transition:0.3s;
+font-weight:bold;
+}
+
+nav a:hover{
+color:red;
+}
+
+.hero{
+height:90vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+background:radial-gradient(circle,#1a0000,#000);
+}
+
+.hero h1{
+font-size:65px;
+margin-bottom:20px;
+}
+
+.hero h1 span{
+color:red;
+}
+
+.hero p{
+max-width:900px;
+font-size:22px;
+line-height:1.7;
+color:#ccc;
+margin-bottom:30px;
+}
+
+.btn{
+padding:15px 40px;
+background:red;
+color:white;
+border:none;
+border-radius:10px;
+font-size:20px;
+cursor:pointer;
+transition:0.3s;
+font-weight:bold;
+}
+
+.btn:hover{
+background:darkred;
+transform:scale(1.05);
+box-shadow:0 0 20px red;
+}
+
+.section{
+padding:80px 40px;
+text-align:center;
+background:#111;
+border-bottom:1px solid #222;
+}
+
+.section h2{
+font-size:45px;
+margin-bottom:25px;
+color:red;
+}
+
+.section p{
+max-width:950px;
+margin:auto;
+font-size:21px;
+line-height:1.9;
+color:#d0d0d0;
+}
+
+.media{
+margin-top:30px;
+width:90%;
+max-width:1000px;
+border-radius:20px;
+border:2px solid red;
+box-shadow:0 0 25px rgba(255,0,0,0.7);
+}
+
+footer{
+background:#000;
+padding:20px;
+text-align:center;
+color:#888;
+border-top:2px solid red;
+}
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+gap:15px;
+}
+
+.hero h1{
+font-size:42px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+.section h2{
+font-size:34px;
+}
+
+.section p{
+font-size:18px;
+}
+
+iframe{
+height:250px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+<div class="house"></div>
+<div class="logo-text">LA CASA DE <span>FILMORA</span></div>
+</div>
+
+<nav>
+<a href="#inicio">INICIO</a>
+<a href="#mision">MISIÓN</a>
+<a href="#vision">VISIÓN</a>
+<a href="#valores">VALORES</a>
+<a href="#interfaz">INTERFAZ DE FILMORA 15</a>
+<a href="#tutorial">VIDEO TUTORIAL</a>
+<a href="#contacto">CONTACTO</a>
+</nav>
+
+</header>
+
+<section class="hero" id="inicio">
+
+<h1>CREA SIN <span>LÍMITES</span></h1>
+
+<p>
+LA CASA DE FILMORA es un espacio moderno inspirado en la creatividad,
+la edición profesional y el diseño digital con Filmora 15.
+</p>
+
+<a href="https://filmora.wondershare.com/" target="_blank">
+<button class="btn">EDITAR YA</button>
+</a>
+
+</section>
+
+<section class="section" id="mision">
+<h2>MISIÓN</h2>
+
+<p>
+Nuestra misión es ayudar a creadores y editores a desarrollar
+contenido visual profesional utilizando herramientas modernas,
+creativas y fáciles de usar inspiradas en Filmora 15.
+</p>
+</section>
+
+<section class="section" id="vision">
+<h2>VISIÓN</h2>
+
+<p>
+Queremos convertirnos en un espacio creativo donde cualquier persona
+pueda aprender edición de video y crear proyectos increíbles
+con una experiencia elegante y profesional.
+</p>
+</section>
+
+<section class="section" id="valores">
+<h2>VALORES</h2>
+
+<p>
+🔴 Creatividad<br><br>
+⚫ Innovación<br><br>
+🔴 Profesionalismo<br><br>
+⚫ Pasión por la edición<br><br>
+🔴 Trabajo en equipo
+</p>
+</section>
+
+<section class="section" id="interfaz">
+<h2>INTERFAZ DE FILMORA 15</h2>
+
+<p>
+Filmora 15 posee una interfaz moderna y fácil de usar,
+diseñada tanto para principiantes como para creadores profesionales.
+</p>
+
+<img
+class="media"
+src="https://images.wondershare.com/filmora/article-images/filmora-editor-interface.jpg"
+alt="Interfaz Filmora 15">
+
+</section>
+
+<section class="section" id="tutorial">
+<h2>VIDEO TUTORIAL</h2>
+
+<p>
+Aprende cómo utilizar Filmora y comenzar a editar videos
+de manera profesional.
+</p>
+
+<iframe
+class="media"
+height="500"
+src="https://www.youtube.com/embed/GaGziG06nmY"
+title="Tutorial Filmora"
+frameborder="0"
+allowfullscreen>
+</iframe>
+
+</section>
+
+<section class="section" id="contacto">
+
+<h2>CONTACTO</h2>
+
+<p>
+🌐 Página oficial:
+https://filmora.wondershare.com/
+<br><br>
+
+📧 Soporte:
+customer_service@wondershare.com
+<br><br>
+
+🎬 Herramientas destacadas:
+<br><br>
+
+• Edición con IA<br>
+• Efectos cinematográficos<br>
+• Plantillas profesionales<br>
+• Exportación en alta calidad<br>
+• Compatible con Windows y Mac
+</p>
+
+</section>
+
+<footer>
+© 2026 LA CASA DE FILMORA | Inspirado en la creatividad y edición moderna.
+</footer>
+
+</body>
+</html>
